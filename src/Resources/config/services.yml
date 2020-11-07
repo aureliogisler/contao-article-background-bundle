@@ -1,0 +1,7 @@
+services:
+    xippogmbh_contao_article_background_bundle.dca_helper:
+            class: XippoGmbH\ContaoArticleBackgroundBundle\Dca\Helper
+            public: true
+            arguments:
+                - '@security.token_storage'
+
