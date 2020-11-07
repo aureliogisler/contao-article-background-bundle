@@ -10,7 +10,4 @@
  * @see        https://github.com/xippoGmbH/contao-article-background-bundle
  *
  */
-// Backend modules
-$GLOBALS['BE_MOD']['content']['article-background'] = ['tables' => ['tl_article'],
-];
-// Models
+

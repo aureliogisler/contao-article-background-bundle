@@ -20,7 +20,7 @@ $GLOBALS['TL_DCA']['tl_article'] = [
             ],
             'sql' => [ 'type' => 'binary', 'length' => 16, 'notnull' => false ],
             'save_callback' => [
-                ['xippogmbh_contao_timeline_bundle.dca_helper', 'storeFileMetaInformation'],
+                ['xippogmbh_contao_article_background_bundle.dca_helper', 'storeFileMetaInformation'],
             ],
         ],
 		'alt' => [
