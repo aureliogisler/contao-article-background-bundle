@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="plaintext" original="src/Resources/contao/languages/de/tl_article.xlf" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="tl_article.article_background">
+                <source>Background</source>
+                <target>Hintergrund</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
