@@ -1,18 +1,18 @@
 <?php
 /**
- * This file is part of a Xippo GmbH Contao Timeline Bundle.
+ * This file is part of a Xippo GmbH Contao Article Background Bundle.
  *
  * (c) Aurelio Gisler (Xippo GmbH)
  *
  * @author     Aurelio Gisler
- * @package    ContaoTimeline
+ * @package    ContaoArticleBackground
  * @license    MIT
- * @see        https://github.com/xippoGmbH/contao-timeline-bundle
+ * @see        https://github.com/xippoGmbH/contao-article-background-bundle
  *
  */
 declare(strict_types=1);
 
-namespace XippoGmbH\ContaoTimelineBundle\Dca;
+namespace XippoGmbH\ContaoArticleBackgroundBundle\Dca;
 
 use Contao\Backend;
 use Contao\BackendUser;
