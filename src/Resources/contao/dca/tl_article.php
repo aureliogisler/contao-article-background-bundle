@@ -97,7 +97,7 @@ $GLOBALS['TL_DCA']['tl_article'] = [
         'default' => str_replace(
 			'keywords;',
 			'keywords;{article_background},addImage;',
-			$GLOBALS['TL_DCA']['tl_article']['palettes']['default']),
+			$GLOBALS['TL_DCA']['tl_article']['palettes']['default'])
     ],
 	'subpalettes' => [
 		'addImage' => 'singleSRC,size,floating,imagemargin,fullsize,overwriteMeta',
