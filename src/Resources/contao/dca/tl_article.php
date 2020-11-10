@@ -15,7 +15,7 @@
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_article']['palettes']['__selector__'] = [ 'protected', 'published', 'background_switch', 'addImage' ];
+$GLOBALS['TL_DCA']['tl_article']['palettes']['__selector__'] = [ 'protected', 'published', 'background_switch', 'addImage', 'overwriteMeta' ];
 $GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('keywords;','keywords;{article_background},addImage;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
 
 $GLOBALS['TL_DCA']['tl_article']['subpalettes']['addImage'] = 'singleSRC,size,floating,imagemargin,fullsize,overwriteMeta';
@@ -70,13 +70,6 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['caption'] = [
 			'eval' => ['maxlength'=>255, 'allowHtml'=>true, 'tl_class'=>'w50'],
 			'sql' => [ 'type' => 'string', 'length' => 255, 'notnull' => true, 'default' => ''],
 		];
-$GLOBALS['TL_DCA']['tl_article']['fields']['fullsize'] = [
-			'label' => &$GLOBALS['TL_LANG']['tl_content']['fullsize'],
-			'exclude' => true,
-			'inputType' => 'checkbox',
-			'eval' => ['tl_class'=>'w50 m12'],
-			'sql' => [ 'type' => 'string', 'length' => 1, 'fixed' => true, 'notnull' => true, 'default' => ''],
-		];
 $GLOBALS['TL_DCA']['tl_article']['fields']['size'] = [
 			'label' => &$GLOBALS['TL_LANG']['tl_content']['size'],
 			'exclude' => true,
@@ -96,21 +89,4 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['imagemargin'] = [
 			'options' => $GLOBALS['TL_CSS_UNITS'],
 			'eval' => ['includeBlankOption'=>true, 'tl_class'=>'w50'],
 			'sql' => [ 'type' => 'string', 'length' => 128, 'notnull' => true, 'default' => ''],
-		];
-$GLOBALS['TL_DCA']['tl_article']['fields']['imageUrl'] = [
-			'label' => &$GLOBALS['TL_LANG']['tl_content']['imageUrl'],
-			'exclude' => true,
-			'search' => true,
-			'inputType' => 'text',
-			'eval' => ['rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>255, 'dcaPicker'=>true, 'addWizardClass'=>false, 'tl_class'=>'w50'],
-			'sql' => [ 'type' => 'string', 'length' => 255, 'notnull' => true, 'default' => ''],
-		];
-$GLOBALS['TL_DCA']['tl_article']['fields']['floating'] = [
-			'label' => &$GLOBALS['TL_LANG']['tl_content']['floating'],
-			'exclude' => true,
-			'inputType' => 'radioTable',
-			'options' => ['above', 'left', 'right', 'below'],
-			'eval' => ['cols'=>4, 'tl_class'=>'w50'],
-			'reference' => &$GLOBALS['TL_LANG']['MSC'],
-			'sql' => [ 'type' => 'string', 'length' => 12, 'notnull' => true, 'default' => 'above'],
 		];
